@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    height: auto; /* Changed to auto to accommodate content */
+    max-width: 90%; /* Improved responsiveness */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Added padding for better spacing */
+    
+}
+
+.login-box h2 {
+    margin-bottom: 30px; /* Adjusted spacing */
+    text-align: center; /* Centered heading */
+    color: black;
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 30px; /* Adjusted spacing */
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: transparent;
+    transition: border-color 0.3s;
+}
+
+.textbox input:focus {
+    border-bottom-color: #9b59b6; /* Changed focus color to match background gradient */
+}
+
+.textbox label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #999;
+    transition: transform 0.3s, font-size 0.3s, color 0.3s;
+}
+
+.textbox input:focus + label,
+.textbox input:valid + label {
+    top: 0;
+    transform: translateY(-100%);
+    font-size: 12px;
+    color: #9b59b6; /* Changed label color on focus/valid */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #ab58cb; /* Changed button background color */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #570c77; /* Darker color on hover */
+    transform: translateY(-10px);
+}
+
+
+
+aur ye css iski

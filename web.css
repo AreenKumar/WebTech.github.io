@@ -1,0 +1,158 @@
+html, body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background-color: #f9f9f9;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    text-transform: uppercase;
+    text-shadow: 10px;
+    position: relative; 
+    transition: transform 0.3s ease;
+}
+nav ul li a:hover{
+    color: purple;
+    transform: translateY(-10px);
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #35749e, #9b59b6);
+    padding: 20px;
+    
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+footer {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6); /* Increased opacity for footer */
+    color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+    color: #000;
+}
+
+.social-links a:hover {
+    color: #888;
+}
+
+.social-links img {
+    width: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.column {
+    flex-basis: calc(25% - 20px);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+.column:hover {
+    transform: translateY(-10px);
+}
+
+.column h2 {
+    padding: 20px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: #fff;
+    margin-bottom: 0;
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+.column img {
+    width: 100%;
+}
+.column img:hover {
+    opacity: 0.6;
+}
+
+.column p {
+    padding: 0 20px 20px;
+}
+
+.column button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.column button:hover {
+    background-color: pink;
+}
+
+p {
+    margin: auto;
+    font-family: Arial, sans-serif;
+    text-justify: auto;
+}
+/* Additional CSS styles can be added here */
+.logo {
+    margin-right: 10px; /* Adjust margin as needed */
+    width: 50px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    image-orientation: flip;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
